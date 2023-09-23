@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background-color: #252525;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin: 100px 0;
+}
+
+.for{
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    color: #ffffff;
+    width: 35%;
+    border-radius: 15px;
+}
+
+.cont_titulo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.cont_nombre, .cont_apellido, .cont_text_doc, .cont_fecha, .cont_telefono, .cont_correo{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 8%;
+    font-size: 17px;
+}
+
+.nombre, .apellido, .doc, .fecha, .tel, .correo{
+    margin-top: 8px;
+    background: #000000;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-bottom: 3px solid #006D38;
+}
+
+.cont_documento{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 8%;
+}
+
+.cont_doc{
+    display: flex;
+    margin-top: 10px;
+}
+
+.cont_cedula, .cont_ti, .cont_d_otro{
+    margin-right: 8%;
+}
+
+.cont_genero{
+    display: flex;
+    margin: 10px 8%;
+}
+
+.text_genero{
+    margin-right: 5%;
+    font-size: 17px;
+}
+
+ .cont_masculino, .cont_femenino, .cont_otro{
+    margin-right: 8%;
+}
+
+.cedula, .ti, .otro, .masculino, .femenino{
+    margin-right: 8px;
+}
+
+.cont_noti{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 8%;
+}
+
+.cont_rta{
+    margin: 10px 0;
+}
+
+.rta{
+    margin-right: 8px;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 3px solid #01a154;
+}
+
+::placeholder{
+    color: #767676;
+    font-size: 14px;
+}
+
+input[type="date"]::-webkit-datetime-edit {
+    color: #767676;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+.cont_boton{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.boton{
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: #006D38;
+    border: 2px solid #006D38;
+    color: #ffffff;
+    margin: 20px 0;
+}

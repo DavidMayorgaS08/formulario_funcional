@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <section>
+        <div class="for">
+            <div class="cont_titulo">
+                <h1 class="titulo">Formulario</h1>
+            </div>
+            <div class="cont_nombre">
+                <p class="text_nobmre">Nombre:</p>
+                <input type="text" id="nombre" class="nombre" placeholder="Digite su nombre" name="nombre" required>
+            </div>
+            <div class="cont_apellido">
+                <p class="text_apellido">Apellidos:</p>
+                <input type="text" id="apellido" class="apellido" placeholder="Digite sus apellidos" name="apellido" required>
+            </div>
+            <div class="cont_documento">
+                <p class="text_doc">Tipo de documento:</p>
+                <div class="cont_doc">
+                    <div class="cont_cedula">
+                        <input type="radio" id="cedula" class="cedula" name="tipo_doc" value="cedula" required>Cédula
+                    </div>
+                    <div class="cont_ti">
+                        <input type="radio" id="ti" class="ti" name="tipo_doc" value="ti" required>Tarjeta de identidad
+                    </div>
+                    <div class="cont_d_otro">
+                        <input type="radio" id="otro" class="otro" name="tipo_doc" value="otro" required>Otro
+                    </div>
+                </div>
+            </div>
+            <div class="cont_text_doc">
+                <p class="text_ndoc">Número de documento:</p>
+                <input type="text" id="doc" class="doc" placeholder="N° de documento" name="documento" required>
+            </div>
+            <div class="cont_genero">
+                <p class="text_genero">Genero:</p>
+                <div class="cont_masculino">
+                    <input type="radio" id="masculino" class="masculino" name="genero" value="Masculino" required>Masculino
+                </div>
+                <div class="cont_femenino">
+                    <input type="radio" id="femenino" class="femenino" name="genero" value="Femenino" required>Femenino
+                </div>
+                <div class="cont_otro">
+                    <input type="radio" id="otro" class="otro" name="genero" value="Otro" required>Otro
+                </div>
+            </div>
+            <div class="cont_fecha">
+                <p class="text_fecha">Fecha de Nacimiento:</p>
+                <input type="date" id="fecha" class="fecha" name="fecha" required>
+            </div>
+            <div class="cont_telefono">
+                <p class="text_tel">Telefono:</p>
+                <input type="text" id="tel" class="tel" name="telefono" placeholder="N° de telefono">
+            </div>
+            <div class="cont_correo">
+                <p class="text_correo">Correo:</p>
+                <input type="email" id="correo" class="correo" name="correo" placeholder="Correo de contacto" required>
+            </div>
+            <div class="cont_noti">
+                <p class="text_rta">Recibir notificaciones al correo</p>
+                <div class="cont_rta">
+                    <input type="checkbox" id="rta" class="rta" name="rta" value="si">Si
+                </div>
+            </div>
+            <div class="cont_boton">
+                <button class="boton" onclick="guardar()">Enviar</button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
