@@ -102,7 +102,7 @@ section{
 
 input:focus {
     outline: none;
-    border-bottom: 3px solid #01a154;
+    border-bottom: 3px solid #02c164;
 }
 
 ::placeholder{
@@ -113,6 +113,7 @@ input:focus {
 input[type="date"]::-webkit-datetime-edit {
     color: #767676;
 }
+
 input[type="date"]::-webkit-calendar-picker-indicator {
     filter: invert(1);
 }
@@ -131,4 +132,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     border: 2px solid #006D38;
     color: #ffffff;
     margin: 20px 0;
+    cursor: pointer;
+}
+
+.boton:hover{
+    background-color: #00b45d;
 }
