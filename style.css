@@ -7,6 +7,9 @@
 
 body{
     background-color: #252525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 section{
@@ -142,6 +145,27 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .boton:hover{
     background-color: #00b45d;
+}
+
+#alert{
+    font-size: 20px;
+}
+
+.alert{
+    position: absolute;
+    width: 30%;
+    height: 200px;
+    background: #ffffff;
+    border-radius: 10px;
+    color: #000000;
+    display: none;
+    z-index: 100;
+}
+
+.alert2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media(max-width: 1270px){
