@@ -169,44 +169,34 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     align-items: center;
 }
 
-@media(max-width: 1270px){
-    .for{
-        width: 50%;
-    }
+.col_nombre, .col_apellido{
+    width: 9%;
 }
 
-@media(max-width: 1050px){
-    .for{
-        width: 60%;
-    }
+.col_tipo_doc, .col_telefono{
+    width: 13%;
 }
 
-@media(max-width: 750px){
-    .for{
-        width: 70%;
-    }
+.col_num_doc{
+    width: 17%;
 }
 
-@media(max-width: 650px){
-    .for{
-        width: 90%;
-    }
+.col_genero, .col_opciones{
+    width: 10%;
 }
 
-@media(max-width: 500px){
-    .cont_doc, .cont_gen{
-        flex-direction: column;
-    }
+.col_fecha{
+    width: 14%;
+}
 
-    .cont_cedula, .cont_ti, .text_genero, .cont_masculino, .cont_femenino{
-        margin-bottom: 10px;
-    }
+.col_correo{
+    width: 16%;
 }
 
 .tg{
     border-collapse:collapse;
     border-spacing:0;
-    width: 90%;
+    width: 95%;
     table-layout: fixed;
 }
 
@@ -240,4 +230,38 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 tbody{
     color: #ffffff;
     text-align: center;
+}
+
+@media(max-width: 1270px){
+    .for{
+        width: 50%;
+    }
+}
+
+@media(max-width: 1050px){
+    .for{
+        width: 60%;
+    }
+}
+
+@media(max-width: 750px){
+    .for{
+        width: 70%;
+    }
+}
+
+@media(max-width: 650px){
+    .for{
+        width: 90%;
+    }
+}
+
+@media(max-width: 500px){
+    .cont_doc, .cont_gen{
+        flex-direction: column;
+    }
+
+    .cont_cedula, .cont_ti, .text_genero, .cont_masculino, .cont_femenino{
+        margin-bottom: 10px;
+    }
 }
