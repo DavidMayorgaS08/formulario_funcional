@@ -145,6 +145,9 @@ function insertar() {
             Editar(item, index);
         })
         eliminar.textContent = "❌";
+        eliminar.addEventListener("click", () => {
+            Eliminar(index);
+        });
         td1.textContent = item.nombre;
         td2.textContent = item.apellido;
         td4.textContent = item.tipoDocumento;
@@ -165,8 +168,10 @@ function insertar() {
         tr.appendChild(td8);
         tr.appendChild(td9);
         frag.appendChild(tr);
-        document.getElementById("tabla").appendChild(frag);
     });
+    let tabla = document.getElementById("tabla");
+    tabla.innerHTML = "";
+    tabla.appendChild(frag);
 
     function Editar(r, i) {
         op = true;
@@ -179,5 +184,10 @@ function insertar() {
         document.getElementById("fecha").value = r.fechaNacimiento;
         document.getElementById("tel").value = r.telefono;
         document.getElementById("correo").value = r.correo;
+    }
+
+    function Eliminar(i) {
+        informacion.splice(i, 1);
+        insertar();
     }
 }

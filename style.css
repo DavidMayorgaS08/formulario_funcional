@@ -206,7 +206,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .tg{
     border-collapse:collapse;
     border-spacing:0;
-    width: 956px;
+    width: 90%;
     table-layout: fixed;
 }
 
@@ -239,4 +239,5 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 tbody{
     color: #ffffff;
+    text-align: center;
 }
