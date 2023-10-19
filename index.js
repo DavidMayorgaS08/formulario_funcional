@@ -1,6 +1,6 @@
 let informacion = [];
-let op = null
-let indice = null
+let op = null;
+let indice = null;
 
 function validar() {
     let nombre = document.getElementById("nombre").value;
@@ -67,15 +67,23 @@ function validar() {
         }
     }
     if (op === true) {
+        let nuevoNombre = document.getElementById("nombre").value;
+        let nuevoApellido = document.getElementById("apellido").value;
+        let nuevoTipoDoc = document.querySelector('input[name="tipo_doc"]:checked').value;
+        let nuevoDoc = document.getElementById("doc").value;
+        let nuevoGenero = document.querySelector('input[name="genero"]:checked').value;
+        let nuevaFecha = document.getElementById("fecha").value;
+        let nuevoTelefono = document.getElementById("tel").value;
+        let nuevoCorreo = document.getElementById("correo").value;
 
-        informacion[indice].nombre = document.getElementById("nombre").value;
-        informacion[indice].apellido = document.getElementById("apellido").value;
-        informacion[indice].tipoDoc = document.querySelector('input[name="tipo_doc"]:checked').value;
-        informacion[indice].doc = document.getElementById("doc").value;
-        informacion[indice].genero = document.querySelector('input[name="genero"]:checked').value;
-        informacion[indice].fecha = document.getElementById("fecha").value;
-        informacion[indice].telefono = document.getElementById("tel").value;
-        informacion[indice].correo = document.getElementById("correo").value;
+        informacion[indice].nombre = nuevoNombre;
+        informacion[indice].apellido = nuevoApellido;
+        informacion[indice].tipoDocumento = nuevoTipoDoc;
+        informacion[indice].numeroDocumento = nuevoDoc;
+        informacion[indice].genero = nuevoGenero;
+        informacion[indice].fechaNacimiento = nuevaFecha;
+        informacion[indice].telefono = nuevoTelefono;
+        informacion[indice].correo = nuevoCorreo;
     } else {
 
         let tipoDocValue = tipoDoc.value;
@@ -111,6 +119,7 @@ function validar() {
 
     document.getElementById("tabla").innerHTML = "";
     insertar();
+    console.log(informacion);
 }
 
 function mostrarAlerta(mensaje) {
@@ -150,8 +159,8 @@ function insertar() {
         });
         td1.textContent = item.nombre;
         td2.textContent = item.apellido;
-        td4.textContent = item.tipoDocumento;
-        td3.textContent = item.numeroDocumento;
+        td3.textContent = item.tipoDocumento;
+        td4.textContent = item.numeroDocumento;
         td5.textContent = item.genero;
         td6.textContent = item.fechaNacimiento;
         td7.textContent = item.telefono;
