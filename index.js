@@ -119,7 +119,6 @@ function validar() {
 
     document.getElementById("tabla").innerHTML = "";
     insertar();
-    console.log(informacion);
 }
 
 function mostrarAlerta(mensaje) {
@@ -134,6 +133,24 @@ function mostrarAlerta(mensaje) {
 }
 
 function insertar() {
+    let cardContainer = document.getElementById("cont_cards");
+    cardContainer.innerHTML = "";
+
+    informacion.forEach((item, index) => {
+        let card = document.createElement("div");
+        card.className = "card";
+        card.innerHTML = `
+                <h2>${item.nombre} ${item.apellido}</h2>
+                <p><strong>Tipo de documento: </strong> ${item.tipoDocumento}</p>
+                <p><strong>Número de documento: </strong> ${item.numeroDocumento}</p>
+                <p><strong>Género: </strong> ${item.genero}</p>
+                <p><strong>Fecha de nacimiento: </strong> ${item.fechaNacimiento}</p>
+                <p><strong>Teléfono: </strong> ${item.telefono}</p>
+                <p><strong>Correo: </strong> ${item.correo}</p>
+            `;
+        cardContainer.appendChild(card);
+    })
+
     let frag = document.createDocumentFragment();
 
     informacion.forEach((item, index) => {

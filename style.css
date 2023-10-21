@@ -28,7 +28,6 @@ section{
     color: #ffffff;
     width: 35%;
     border-radius: 15px;
-    height: 100%;
 }
 
 .cont_titulo{
@@ -232,6 +231,10 @@ tbody{
     text-align: center;
 }
 
+.cont_card{
+    display: none;
+}
+
 @media(max-width: 1270px){
     .for{
         width: 50%;
@@ -244,6 +247,38 @@ tbody{
     }
 }
 
+@media(max-width: 1000px){
+    .tg{
+        display: none;
+    }
+
+    .cont_card {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        margin-top: 10px;
+        padding: 0 2%;
+        gap: 20px;
+    }
+    
+    .card {
+        background-color: #000000;
+        color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 300px;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+@media(max-width: 900px){
+    .cont_card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media(max-width: 750px){
     .for{
         width: 70%;
@@ -253,6 +288,11 @@ tbody{
 @media(max-width: 650px){
     .for{
         width: 90%;
+    }
+
+    .cont_card{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
